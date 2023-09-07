@@ -1,0 +1,91 @@
+.PopupBackground{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all;
+}
+
+.PopupContent{
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.PopupHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.PopupHeader button{
+    color: red;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin:5px;
+    border: none;
+    background-color: transparent;
+}
+
+.PopupHeader button:hover{
+    transition: 0.3s;
+    color: black;
+    cursor: pointer;
+}
+
+.PopupHeader h2{
+    color: rgb(83, 61, 95);
+    font-size: 2.2em;
+    margin-right: 20px;
+}
+
+.PopupContentField{
+    display: flex;
+    padding: 10px;
+}
+
+.PopupContentField p{
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 5px 0px;
+}
+
+.PopupContentField input.disabled{
+    color: rgb(131, 131, 131);
+    border: 1px solid rgb(163, 163, 163);
+}
+
+.PopupContentField input{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px 0px;
+    color: rgb(36, 33, 43);
+}
+
+.PopupContentField button{
+    padding: 5px 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: rgb(180, 4, 255);
+    background-color: rgb(66, 47, 66);
+    border: 2px solid rgb(230, 184, 230);
+    box-shadow: 0px 0px 25px 2px darkmagenta;
+    font-weight: bolder;
+}
+
+.PopupContentField button:hover{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 4px 30px;
+    transition: 0.4s;
+}

@@ -1,0 +1,136 @@
+main{
+    background-image: linear-gradient(to top,rgb(152, 131, 109),antiquewhite);
+    width: 100%;
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 4em;
+    color: burlywood;
+    margin-top: 0.2em;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section .div-add-item{
+    display: flex;
+    height: 3em;
+    margin-top: 1em;
+}
+
+main form{
+    display: flex;
+}
+
+main section .div-add-item input{
+    width: calc(100% + 20em);
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 5px 0px 0px 5px;
+    color: rgb(96, 70, 10);
+    font-weight: bold;
+    font-size: 1.2em;
+    height: 100%;
+}
+
+main section input:focus{
+    outline: auto 2px saddlebrown;
+}
+
+main section .div-add-item button {
+    padding: 0.5em 0.5em;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.5s;
+    height: 100%;
+}
+
+main > section button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+div .list-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.2em;
+}
+
+div .list-itens{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+}
+
+div .list-itens .list-btns{
+    height: 100%;
+}
+
+.btn-done,.btn-delete,.btn-edit{
+    display: flex;
+    align-items: center;
+    float: left;
+    padding: 10px 1.2em;
+    height: 100%;
+    border: none;
+}
+
+div .list-itens .btn-done{
+    background-color: green;
+    color: greenyellow;
+}
+
+div .list-itens .btn-delete{
+    background-color: darkred;
+    color: red;
+}
+
+div .list-itens .btn-edit{
+    background-color: rgb(183, 100, 0); 
+    color: orange;
+    border-radius: 0px 5px 5px 0px;
+}
+
+div .list-btns span:hover{
+    transition: 0.4s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+div .limiter-p{
+    display: flex;
+    word-wrap: break-word;
+}
+
+div .limiter-p p{
+    font-size: 2em;
+    color: grey;
+    padding: 10px 5px;
+    margin-right: 0.7em;
+    width: 9em;
+}
+
+.confirmed{
+    transition: 0.4s;
+    background-color: greenyellow !important;
+}
+
+.confirmed p{
+    color: green !important;
+}
+
